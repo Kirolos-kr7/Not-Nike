@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,900&display=swap");
-
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +5,7 @@
 }
 
 body {
-  background: url(./imgs/pexels-daniel-absi-952670.jpg) center center no-repeat;
+  background: url(./imgs/pexelsBg.jpg) center center no-repeat;
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -157,7 +155,7 @@ h2.two {
 
 .about {
   position: absolute;
-  top: 53%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -237,4 +235,93 @@ h2.two {
 .active {
   display: block;
   animation: showNav 250ms ease-in-out both;
+}
+
+@media only screen and (max-width: 833px) {
+  .about h3 {
+    font-size: 22px;
+  }
+  .about p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 729px) {
+  .about h3 {
+    font-size: 20px;
+  }
+  .about p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  h2 {
+    font-size: 60px;
+  }
+  img.Sneakers {
+    transform: translate(0px, -20px) rotate(160deg) scaleY(-1);
+    width: 80%;
+  }
+  img.Running {
+    transform: translate(0px, -20px) rotate(-25deg) scaleX(1);
+    width: 80%;
+  }
+  .right {
+    padding: 10px 5px 5px 12px;
+  }
+  .left {
+    padding: 10px 12px 5px 5px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  h2 {
+    font-size: 40px;
+  }
+  .More {
+    top: 70%;
+    left: 60%;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  h1 {
+    margin: 30px 15px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .right img,
+  .left img {
+    width: 16px;
+  }
+  .openNav {
+    right: 25px;
+  }
+  .closeNav {
+    left: 25px;
+  }
+  .More {
+    top: 59%;
+    left: 56%;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 378px) {
+  .More {
+    top: 75%;
+    left: 56%;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 348px) {
+  .More {
+    top: 80%;
+    left: 56%;
+    font-size: 10px;
+  }
 }
